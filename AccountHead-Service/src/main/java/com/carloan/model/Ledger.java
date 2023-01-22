@@ -5,6 +5,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+
 @Entity
 public class Ledger {
 
@@ -22,7 +23,7 @@ public class Ledger {
 	private String nextEmiDateStart;
 	private String nextEmiDateEnd;
 	private int defaulterCount;
-	private String EmiStatus;
+	private String emiStatus;
     private String currentMonthEmiStatus;
     private String loanEndDate;
     private String loanStatus;
@@ -93,10 +94,10 @@ public class Ledger {
 		this.defaulterCount = defaulterCount;
 	}
 	public String getEmiStatus() {
-		return EmiStatus;
+		return emiStatus;
 	}
 	public void setEmiStatus(String emiStatus) {
-		EmiStatus = emiStatus;
+		emiStatus = emiStatus;
 	}
 	public String getCurrentMonthEmiStatus() {
 		return currentMonthEmiStatus;
