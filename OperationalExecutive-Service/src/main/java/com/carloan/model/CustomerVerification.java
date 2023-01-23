@@ -11,8 +11,15 @@ public class CustomerVerification {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int verificationId;
 	private String verificationDate;
-	private String Status;
+	private String status;
 	private String remark;
+	
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
+	}
 	public int getVerificationId() {
 		return verificationId;
 	}
@@ -25,12 +32,7 @@ public class CustomerVerification {
 	public void setVerificationDate(String verificationDate) {
 		this.verificationDate = verificationDate;
 	}
-	public String getStatus() {
-		return Status;
-	}
-	public void setStatus(String status) {
-		Status = status;
-	}
+
 	public String getRemark() {
 		return remark;
 	}
